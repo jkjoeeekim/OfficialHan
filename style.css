@@ -1,0 +1,133 @@
+html {
+    display: block;
+    background-image: url("./assets/background.jpg");
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Gugi', cursive;
+    font-size: 35px;
+    color: white;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.topnav {
+    background-color: rgb(0, 0, 0, 0.6);
+    overflow: hidden;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.topnav a, .topnav button {
+    float: left;
+    display: block;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-family: 'Gugi', cursive;
+    font-size: 26px;
+    color: white;
+    border: none;
+    background-color: inherit;
+    outline: none;
+    cursor: pointer;
+}
+
+.topnav a:hover, .topnav button:hover, .topnav button:focus {
+    background-color: rgb(120, 110, 40);
+    text-decoration: underline white;
+}
+
+.topnav a.active, .topnav button.active {
+    background-color: white;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .drop3 {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 15px;
+    color: white;
+    background-color: inherit;
+}
+
+.policy-content {
+    display: none;
+    position: absolute;
+    margin-top: 60px;
+    background-color: rgb(0, 0, 0, 0.6);
+    min-width: 200px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.policy-content a {
+    float: none;
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.show {
+    display: block;
+}
+
+/* .borderTop {
+    position: fixed;
+    left: 40%;
+    top: 30%;
+    border-top: 15px;
+    border-bottom: 0px;
+    border-right: 15px;
+    border-left: 15px;
+    border-style: solid;
+    border-color: rgb(150, 140, 75);
+    width: 400px;
+    height: 150px;
+}
+
+.borderBottom {
+    position: fixed;
+    left: 40%;
+    top: 60%;
+    border-top: 0px;
+    border-bottom: 15px;
+    border-right: 15px;
+    border-left: 15px;
+    border-style: solid;
+    border-color: rgb(150, 140, 75);
+    width: 400px;
+    height: 150px;
+    
+}
+
+.main {
+    position: fixed;
+    left: 38%;
+    top: 46%;
+} */
+
+/* th {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+td {
+    font-family: 'Raleway', sans-serif;
+    text-align: right;
+    font-size: 14px;
+    
+    color: white;
+} */
