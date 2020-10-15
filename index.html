@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>Official HAN</h1>
+        <h1><a href="index.html"> Official HAN</a></h1>
     </header>
 
-    <div class="topnav">
-            <a href="shop.html">SHOP</a>
-            <a href="contact.html">CONTACT</a>
-            <div class="dropdown">
+    <div class="topnav" id="topnav">
+            <a href="shop.html"><button>SHOP</button></a>
+            <a href="contact.html"><button>CONTACT</button></a>
+            <div class="dropdown" id="dropdown">
                 <button class="drop3" onclick="dropdown3()">POLICY</button>
                 <div class="policy-content" id="policyContent">
                     <a href="privacy.html">Privacy</a>
@@ -27,11 +28,15 @@
             </div>
     </div>
 
-    <table class="borderTop">
+    <div class="spacer">
+
+    </div>
+
+    <!-- <table class="borderTop">
     </table>
 
     <table class="borderBottom">
-    </table>
+    </table> -->
 
     <!-- <table class="main">
         <tr>
@@ -41,6 +46,12 @@
             <td>Los Angeles based contemporary Asian street fashion.</td>
         </tr>
     </table> -->
+
+<footer class="stickyFooter">
+    <a href="https://www.facebook.com/official.hanism" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/official__han/" target="_blank" class="fa fa-instagram"></a>
+    <p>Official Han LLC</p>
+</footer>
 
 <script src="script.js"></script>
 </body>

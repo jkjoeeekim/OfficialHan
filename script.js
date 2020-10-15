@@ -10,3 +10,19 @@ window.onclick = function(e) {
         }
     }
 }
+
+window.onscroll = function() {scrollSticky()};
+
+var header = document.getElementById("topnav");
+var dropMenu = document.getElementById("policyContent");
+var sticky = header.offsetTop;
+
+function scrollSticky() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("stickyNav");
+    dropMenu.classList.add("stickyDrop");
+  } else {
+    header.classList.remove("stickyNav");
+    dropMenu.classList.remove("stickyDrop");
+  }
+}
