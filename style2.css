@@ -196,3 +196,21 @@ footer p {
   background: rgb(212, 212, 212);
   color: black;
 }
+
+
+
+@media only screen and (max-width: 1200px) {
+  .topnav .menu .display, .show {
+    display: none;
+  }
+
+  .topnav .menu .center {
+    float: none;
+    position: absolute;
+    top: 9%;
+    left: 48.5%;
+    transform: translate(-50%, -50%);
+  }
+
+
+}
