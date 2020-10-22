@@ -1,72 +1,90 @@
 html {
     display: block;
-    background-image: url("./assets/background.jpg");
+    background-image: url("./assets/background.png");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-h1 {
+/* h1 {
     font-family: 'Gugi', cursive;
     font-size: 35px;
     color: white;
     padding-left: 40px;
-    padding-top: 20px;
+    padding-top: 0px;
     background: transparent;
     border: 0;
-}
+} */
 
-header a {
+/* header a {
     color: white;
     text-decoration: none;
-}
+} */
 
 .topnav {
-    background-color: rgb(0, 0, 0, 0.6);
     /* border-width: 1px;
     border-color: white;
     border-style: groove; */
-    margin-left: -8px;
-    margin-right: -8px;
-    overflow: hidden;
-    align-content: center;
+    
+    width: 100%;
+    
+    /* align-content: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
 }
 
-.topnav a, .topnav button {
+/* .topnav li, .topnav button, .drop3 {
     float: left;
     display: block;
-    padding: 10px 40px;
-    text-decoration: none;
-    font-family: 'Gugi', cursive;
-    font-size: 26px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
     color: white;
     border: none;
     background: transparent;
     background-color: none;
-    outline: none;
+    
     cursor: pointer;
-}
+} */
 
-.topnav a:hover, .topnav button:hover, .topnav button:focus {
+/* .topnav a:hover, .topnav button:hover, .topnav button:focus {
     background-color: rgb(120, 110, 40);
     text-decoration: underline white;
-}
+} */
 
-.topnav a.active, .topnav button.active {
+/* .topnav li.active, .topnav button.active {
     background-color: white;
+} */
+
+.topnav .menu .underline-from-center{
+    position: relative
 }
 
-.dropdown {
+.topnav .menu .underline-from-center::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 0.125rem);
+    border-bottom: 0.125rem solid rgb(120, 110, 40);
+    left: 50%;
+    right: 50%;
+    transition: all 0.5s ease;
+}
+
+.topnav .menu .underline-from-center:hover::after {
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+/* .dropdown {
     float: left;
-
-}
-
-.dropdown .drop3 {
     cursor: pointer;
     border: none;
     outline: none;
@@ -74,7 +92,7 @@ header a {
     color: white;
     background-color: inherit;
     width: 250px;
-}
+} */
 
 .policy-content {
     display: none;
@@ -82,17 +100,17 @@ header a {
     margin-top: 73px;
     background-color: rgb(0, 0, 0, 0.6);
     min-width: 250px;
-    box-shadow:  rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
 .policy-content a {
-    float: none;
+    float: center;
     color: white;
     padding: 15px 15px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
 }
 
 .show {
@@ -102,10 +120,10 @@ header a {
 .spacer {
     height: 1600px;
     width: 300px;
-    background-color: rgb(128, 128, 128, 0.4);
+    /* background-color: rgb(128, 128, 128, 0.4);
     border-style: solid;
     border-width: 4px;
-    border-color: rgb(255, 255, 255, 0.5);
+    border-color: rgb(255, 255, 255, 0.5); */
     font-size: 26px;
     margin-left: 25px;
     margin-top: 25px;
@@ -114,12 +132,14 @@ header a {
 .stickyNav {
     position: fixed;
     top: 0;
+    margin-top: 0px;
     width: 100%;
 }
 
 .stickyDrop {
     position: fixed;
     top: 0;
+    margin-top: 0px;
     width: inherit;
 }
 
@@ -159,13 +179,13 @@ footer p {
   }
   
   .fa-facebook {
-    background: #3B5998;
-    color: white;
+    background: white;
+    color: black;
   }
 
   .fa-instagram {
-    background: #125688;
-    color: white;
+    background: white;
+    color: black;
   }
 
 /* .borderTop {

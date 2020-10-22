@@ -1,0 +1,198 @@
+html {
+  background-image: url("./assets/background2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* NAVIGATION BAR */
+.menu {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.35s ease;
+  margin: 0 auto;
+  list-style-type: none;
+  width: 1125px;
+}
+
+.menu li, .menu button {
+  float: left;
+  display: block;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 34px;
+  letter-spacing: 1px;
+}
+
+.icons, .drop3 {
+  margin-top: 80px;
+}
+
+.menu button {
+  background: transparent;
+  border: none;
+}
+
+.menu button:focus {
+  outline: none;
+}
+
+.menu a, .menu button {
+  padding: 0.75rem 0;
+  color: 	rgb(212, 212, 212);
+  position: relative;
+  margin-left: 1rem;
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  text-align: center;
+}
+
+.menu li:first-child a, .menu button:first-child a {
+  margin-left: 0;
+}
+
+.menu li.active > a, .menu button.active > a {
+  background-color: transparent;
+}
+
+.menu a:before,
+.menu a::after,
+.menu button:before,
+.menu button::after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  transition: all 0.35s ease;
+  background-color: rgb(212, 212, 212);
+  width: 0;
+}
+
+.menu a::before,
+.menu button::before {
+  top: 0;
+  left: 0;
+}
+
+.menu a::after,
+.menu button::after {
+  bottom: 0;
+  right: 0;
+}
+
+.menu a:hover,
+.menu li.active > a,
+.menu button:hover,
+.menu button.active > a {
+  color: white;
+  transition: all 0.35s ease;
+}
+
+.menu a:hover::before,
+.menu .active a::before,
+.menu a:hover::after,
+.menu .active a::after,
+.menu button:hover::before,
+.menu .active button::before,
+.menu button:hover::after,
+.menu .active button::after {
+  width: 70%;
+}
+
+/* MENU SUB MENU */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.policy-content {
+  display: none;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 24px;
+  letter-spacing: 2px;
+  min-width: 160px;
+  box-shadow: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.policy-content a {
+  float: none;
+  color: white;
+  padding: 15px 15px;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+}
+
+.drop3 > .menu {
+  display: none;
+}
+
+.drop3:active .policy-content {
+  display: inline-block
+}
+
+.show {
+  display: inline-block;
+}
+
+/* EMPTY DIV FOR SPACING */
+.spacer {
+  height: 1600px;
+  width: 300px;
+  /* background-color: rgb(128, 128, 128, 0.4);
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgb(255, 255, 255, 0.5); */
+  font-size: 26px;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+/* STICKY FOOTER */
+.stickyFooter {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  bottom: 0;
+  flex-shrink: 0;
+  padding: 6px;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-left: -10px;
+  color: rgb(212, 212, 212);
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+footer p {
+  float: right;
+  margin-right: 20px;
+  margin-top: 6px;
+}
+
+/* SOCIALS ICONS */
+.fa {
+  padding: 10px;
+  font-size: 16px;
+  width: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 15px;
+  border-radius: 50%;
+  float: left;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: rgb(212, 212, 212);
+  color: black;
+}
+
+.fa-instagram {
+  background: rgb(212, 212, 212);
+  color: black;
+}
